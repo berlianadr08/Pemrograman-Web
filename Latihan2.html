@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Kalkulator Sederhana</title>
+    </head>
+    <script language = "Javascript">
+        function Penjumlahan(){
+            var con1 = parseInt(document.kirim.T1.value)
+            var con2 = parseInt(document.kirim.T2.value)
+            hasil = con1 + con2
+            document.kirim. T3. value= hasil
+        }
+        function Pengurangan(){
+            var con1 = parseInt(document.kirim.T1.value)
+            var con2 = parseInt(document.kirim.T2.value)
+            hasil = con1 - con2
+            document.kirim. T3. value= hasil
+        }
+        function Perkalian(){
+            var con1 = parseInt(document.kirim.T1.value)
+            var con2 = parseInt(document.kirim.T2.value)
+            hasil = con1 * con2
+            document.kirim. T3. value= hasil
+        }
+        function Pembagian(){
+            var con1 = parseInt(document.kirim.T1.value)
+            var con2 = parseInt(document.kirim.T2.value)
+            hasil = con1 / con2
+            document.kirim. T3. value= hasil
+        }
+    </script>
+
+<body>
+    <form method="POST" name="kirim">
+        <p>Bilangan 1 <input type="text" name="T1" size="20"> Bilangan 2 <input type="text" name="T2" size="20"> Hasil = <input type="text" name="T3" size="20"></p>
+
+        <p><input type="button"  value="+" name="B1" onclick=Penjumlahan()> <input type="button"  value="-" name="B2" onclick=Pengurangan()> 
+            <input type="button"  value="x" name="B3" onclick=Perkalian()> <input type="button"  value=":" name="B4" onclick=Pembagian()> </p>
+</body>
+</html>
