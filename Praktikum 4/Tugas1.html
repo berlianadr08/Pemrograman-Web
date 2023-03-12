@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Soal Nomer 1</title>
+        <script src="jquery-3.6.3.js"></script>
+        <!--Script berfungsi untuk memberikan fungsi pada button-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".sembunyi1").click(function () { $("#foto1").hide("slow") });
+                $(".tampil1").click(function () { $("#foto1").show("slow") });
+                $(".sembunyi2").click(function () { $("#foto2").hide("slow") });
+                $(".tampil2").click(function () { $("#foto2").show("slow") });
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <!--Tampilan dari button sembunyikan, tampilkan, dan foto 1-->
+        <div>
+            <button class="sembunyi1">sembunyikan</button>
+            <button class="tampil1">tampilkan</button>
+            <p><img id="foto1" src="GAMBAR KOALA.jpg"></p>
+        </div>
+        <!--Tampilan dari button sembunyikan, tampilkan, dan foto 2-->
+        <div>
+            <button class="sembunyi2">sembunyikan</button>
+            <button class="tampil2">tampilkan</button>
+            <p><img id="foto2" src="GAMBAR KUDA.jpg"></p>
+        </div>
+    </body>
+</html>

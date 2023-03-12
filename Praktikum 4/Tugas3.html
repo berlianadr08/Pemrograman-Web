@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soal Nomer 3</title>
+        <script src="jquery-3.6.3.js"></script>
+        <style>
+            #Kotak {
+                width: 200px;
+                height: 100px;
+                margin-right: 10px;
+                background-color: yellow;
+            }
+
+            .button.fadein:hover {
+                background-color: #8BF5FA;
+            }
+
+            .button.fadeout:hover {
+                background-color: #8BF5FA;
+            }
+
+            .button.fadeto:hover {
+                background-color: #8BF5FA;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $(".fadein").click(function() {
+                    $("#Kotak").fadeIn("slow");
+                });
+                $(".fadeout").click(function() {
+                    $("#Kotak").fadeOut("slow");
+                });
+                $(".fadeto").click(function() {
+                    $("#Kotak").fadeTo("slow", 0.3);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="Kotak"></div>
+        <br>
+        <div>
+            <button class="button fadein">Fade in</button>
+            <button class="button fadeout">Fade out</button>
+            <button class="button fadeto">Fade to 0.3</button>
+        </div>
+    </body>
+</html>

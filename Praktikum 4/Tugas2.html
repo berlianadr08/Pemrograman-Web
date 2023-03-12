@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soal Nomer 2</title>
+        <script src="jquery-3.6.3.js"></script>
+         <!--Script berfungsi untuk event double click-->
+         <script type="text/javascript">
+            $(document).ready(function(){
+                $("#Kotak1").dblclick(function(){
+                    $("#Kotak1").css("background-color","green")
+                })
+                $("#Kotak2").dblclick(function(){
+                    $("#Kotak2").css("background-color","red")
+                })
+                $("#Kotak3").dblclick(function(){
+                    $("#Kotak3").css("background-color","green")
+                })
+                $("#Kotak4").dblclick(function(){
+                    $("#Kotak4").css("background-color","red")
+                })
+            });
+        </script>
+
+    <!--Style ukuran dan warna objek kotak-->
+      <style>
+        div[id^=Kotak] {
+            width: 80px;
+            height: 80px;
+            margin-right: 5px;
+            background-color: yellow;
+            float: left;
+        }
+      </style>
+    </head>
+    <!--Tampilan objek kotak pada halaman web-->
+        <body>
+            Klik 2 kali pada kotak untuk mengubah warna
+            <br><br>
+            <!--Tampilan membuat 4 buah kotak dalam satu baris menggunakan flexbox-->
+            <div style="display:flex">
+                <div id="Kotak1"></div>
+                <div id="Kotak2"></div>
+                <div id="Kotak3"></div>
+                <div id="Kotak4"></div>
+            </div>
+        </body>
+</html>
