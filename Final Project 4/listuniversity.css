@@ -1,0 +1,38 @@
+.judul {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.judultengah{
+    justify-content: center;
+    padding-left: 25%;
+}
+
+.bg {
+    background-image: url(Image/Backgroundopacity.png);
+}
+
+table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    border-radius: 60px;
+    background: linear-gradient(315deg, #229eb9, #29bcdb);
+    box-shadow:  -30px -30px 60px #2096ae,
+                 30px 30px 60px #2ccaec;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.tblhome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+}
+
